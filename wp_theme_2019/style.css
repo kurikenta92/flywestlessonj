@@ -509,6 +509,17 @@ img {
 /*---------------------------------------------------------
 記事一覧
 ---------------------------------------------------------*/
+.archive-top h1 {
+font-size: 1.6rem;
+margin-bottom: 1.5rem;
+}
+
+.archive-top p {
+font-size: .875rem;
+line-height: 1.7;
+margin-bottom: 1.5rem;
+}
+
 .article-list {
   margin-bottom: 1rem;
   padding: 1rem;
@@ -780,7 +791,45 @@ img {
   opacity: .6;
 }
 
+/*---------------------------------------------------------
+TOPページ
+---------------------------------------------------------*/
+.home-top .article-top .img-wrap img {
+  width: 600px;
+  height: 400px;
+}
 
+.home-top .article-top .text {
+  margin-left: 630px;
+}
+
+.home-top .article-top .new-post {
+  font-weight: bold;
+  display: block;
+  margin-bottom: .5rem;
+  color: #f00;
+}
+
+.home-top .article-top .text h2 {
+  font-size: 1.6rem;
+  margin-bottom: 1rem;
+}
+
+.home-top .article-top .text .article-date,
+.home-top .article-top .text .cat-data {
+  margin-bottom: 1rem;
+}
+
+@media(max-width: 1024px) {
+  .home-top .article-top .img-wrap img {
+    width: 420px;
+    height: 280px;
+  }
+
+  .home-top .article-top .text {
+    margin-left: 440px;
+  }
+}
 
 @media(max-width: 800px) {
   .contents,
@@ -874,6 +923,29 @@ img {
   .footer-nav li:nth-of-type(2n) {
     margin-right: 0;
   }
+
+  /*---------------------------------------------------------
+  TOPページ
+  ---------------------------------------------------------*/
+  .home-top .article-top .img-wrap {
+    float: none;
+  }
+
+  .home-top .article-top .img-wrap img {
+    width: 100%;
+    height: 60vw;
+  }
+
+  .home-top .article-top .text {
+    margin-left: 0;
+  }
+
+  .home-top .article-top .new-post,
+  .home-top .article-top .text h2,
+  .home-top .article-top .text .article-date,
+  .home-top .article-top .text .cat-data {
+    margin-bottom: 0;
+  }
 }
 
 @media(max-width: 600px) {
@@ -921,6 +993,16 @@ img {
   /*---------------------------------------------------------
   記事一覧
   ---------------------------------------------------------*/
+  .archive-top h1 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .archive-top p {
+    font-size: .8125rem;
+    margin-bottom: 1rem;
+  }
+  
   .article-list {
     padding: .5rem;
   }
