@@ -1,122 +1,664 @@
-@charset "utf-8";
-
-/*
-theme Name: WordPressレスポンシブテーマ作成byPlusers
-Author: Plusers
-Description: original theme
-version： 2.0.0
-*/
-/*cssのリセット*/
-html, body, div, span, object, iframe, h1, h2, h3, h4, h5, h6, p,
-blockquote, pre, abbr, address, cite, code, del, dfn, em, img,
-ins, kbd, q, samp, small, strong, sub, sup, var, b, i, dl, dt, dd,
-ol, ul, li, fieldset, form, label, legend, table, caption,
-tbody, tfoot, thead, tr, th, td, article, aside, canvas, details,
-figcaption, figure, footer, header, hgroup, menu, nav, section,
-summary, time, mark, audio, video {
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  border: 0;
-  outline: 0;
-  background: transparent;
+.container {
+    width: 100%;
+    margin: 0 auto;
 }
 
-body {
-  line-height: 1;
+.left {
+    background-color: black;
+    float: left;
+    width: 80%;
+    color: #D4BC66;
+    height: 30px;
+    position: relative;
 }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block;
+.p-1 {
+    position: absolute;
+    top: 20%;
+    left: 2%;
 }
 
-nav ul {
-  list-style: none;
+.p-1 a {
+    color: #D4BC66;
+    text-decoration: none;
 }
 
-blockquote,
-q {
-  quotes: none;
+.p-2 {
+    position: absolute;
+    top: 20%;
+    right: 2%;
 }
 
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: '';
-  content: none;
+
+.right {
+    float: right;
+    width: 20%;
+    height: 30px;
+    background-color: black;
+    color: #D4BC66;
+}
+.p-3 {
+    padding-top: 5px;
+    text-align: center;
+    color: #D4BC66;
 }
 
-a {
-  font-size: 100%;
-  margin: 0;
-  padding: 0;
-  vertical-align: baseline;
-  background: transparent;
+.p-3 a {
+    color: #D4BC66;
+    text-decoration: none;
 }
 
-ins {
+.h-nav {
+    clear: both;
+
+}
+
+.h-menu {
+    letter-spacing: -.4em;
+}
+
+.h-list {
+    display: inline-block;
+    width: calc(100%/5);
+    position: relative;
+    letter-spacing: normal;
+    height: 64px;
+    border-right: 1px solid black;
+    box-sizing: border-box;
+    color: white;
+    background-color: #D4BC66;
+    vertical-align: bottom;
+   
+}
+
+
+
+.h-l-box:hover {
+    color: white;
+    border-bottom: 3px solid white;
+    transition: .4s;
+}
+
+
+
+
+.h-l-box {
+  color: black;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+
+.h-l-top {
+    font-size: 15px;
+    margin-bottom: 4px;
+    text-align: center;
+    
+}
+
+.h-l-bottom {
+    padding-bottom: 2px;
+    font-size: 8px;
+    text-align: center;
+}
+
+
+main {
+    clear: both;
+    background-color: #121212;
+}
+
+
+.img1 {
+    background-size: cover;
+    max-width: 100%;
+}
+
+.top-wrapper  {
+  
+    padding: 280px 0 100px 0;
+    text-align: center;
+   
+  }
+  
+  .top-wrapper h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+  
+  .top-wrapper p {
+    font-size: 20px;
+    margin: 30px;
+  }
+  
+  .btn-wrapper {
+    margin: 50px 0;
+  }
+  
+  .btn-wrapper p {
+    margin: 10px 0;
+  }
+  
+  .signup {
+    background-color: #82D741;
+  }
+  
+  .facebook {
+    background-color: #3b5998;
+    margin-right: 10px;
+  }
+  
+  .twitter {
+    background-color: #55acee;
+  }
+
+  .instagram {
+    margin-left: 10px;
+    background:linear-gradient(135deg, #427eff 0%, #f13f79 70%) no-repeat;
+  }
+  
+  .btn {
+    padding: 8px 24px;
+    color: white;
+    display: inline-block;
+    opacity: 0.8;
+    border-radius: 4px;
+  }
+  
+  .btn:hover {
+    opacity: 1;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+
+  .section1 {
+      background-color: #121212;
+      color: white;
+      text-align: center;
+      margin: 100px 180px 0 180px;
+      font-family: 'Times New Roman', Times, serif;
+      line-height: 1.5;
+      padding-bottom: 100px;
+  }
+
+
+  .h1 {
+    font-size: 30px;
+    margin: 0 150px 20px 150px;
+    border-bottom: 2px solid #D4BC66;
+  }
+
+  .h2 {
+    line-height: 2;
+  }
+  .h3 {
+      font-size: 30px;
+      background-color: #D4BC66;
+      border-radius: 5px;
+      margin: 0 300px;
+  }
+
+  .h3 a {
+    color: white;
+    text-decoration: none;
+  }
+
+  .m-p {
+       font-size: 12px;
+       padding-bottom: 30px;
+       line-height: 2;
+  }
+
+  .left1 {
+      font-family: 'Times New Roman', Times, serif;
+      color: white;
+      text-align: center;
+      height: 350px;
+      float: left;
+      width: 70%;
+      background-color: black;
+  }
+
+  
+  .h4 {
+      font-size: 35px;
+      margin: 40px 100px;
+      border-bottom: 2px solid #D4BC66;
+  }
+
+  .t-p {
+      margin: 0 60px;
+      line-height: 2;
+      padding-bottom: 30px;
+  }
+  
+  .p-p {
+    margin: 0 280px;
+    font-size: 25px;
+    background-color: #D4BC66;
+    border-radius: 5px;
+  }
+
+  .p-p a {
+      color: white;
+      text-decoration: none;
+  }
+
+  .right1 {
+      width: 30%;
+     float: right;
+     height: 350px;
+  }
+
+  .left2 {
+    width: 30%;
+    float: left;
+    height: 350px;
+  }
+
+  .right2 {
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+    text-align: center;
+    height: 350px;
+    float: right;
+    width: 70%;
+    background-color: #121212;
+  }
+  
+  .h5 {
+      font-size: 40px;
+      text-align: center;
+      color: white;
+      font-family: 'Times New Roman', Times, serif;
+      padding-top: 50px;
+
+  }
+  
+.m-date {
+   
+    float: left;
+    padding: 5px 30px;
+    color: white;
+    
+}
+.m-contents {
+    text-align: center;
+  
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.dete {
+    float: left;
+    padding: 15px 30px;
+    color: white;
+}
+
+.dete {
+    float: left;
+    padding: 15px 30px;
+    color: white;
+}
+
+.contents {
+    text-align: center;
+    color: white;
+    padding: 15px 30px;
+    border-bottom: 1px solid #ddd;
+}
+
+.c-p {
+    
+    margin: 10px 280px;
+    font-size: 20px;
+    background-color: #D4BC66;
+    border-radius: 5px;
+}
+
+.c-p a {
+    text-decoration: none;
+    color: white;
+}
+
+
+
+.footer {
+  background-color: #121212;
+ 
+}
+
+.h6 {
+  font-size: 42px;
+  color: #fff;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  border-bottom: 1px solid #3B4552;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.memo {
+  margin-left: 250px;
+  padding-bottom: 50px;
+}
+
+.f-p {
+  padding: 30px 30px 0 0;
+  font-size: 15px;
+  color: #fff;
   text-decoration: none;
-  color: #000;
-  background-color: #ff9;
 }
 
-mark {
-  font-weight: bold;
-  font-style: italic;
-  color: #000;
-  background-color: #ff9;
+.f-p a {
+  color: #fff;
 }
 
-del {
-  text-decoration: line-through;
+.f-left {
+  
+  float: left;
+ 
 }
 
-abbr[title],
-dfn[title] {
-  cursor: help;
-  border-bottom: 1px dotted;
+.f-left a {
+  color: #fff;
+   text-decoration: none;
 }
 
-table {
-  border-spacing: 0;
-  border-collapse: collapse;
+.mark {
+  padding-right: 10px;
 }
 
-hr {
-  display: block;
-  height: 1px;
-  margin: 1em 0;
-  padding: 0;
-  border: 0;
-  border-top: 1px solid #ccc;
+.f-right {
+  display: inline-block;
+  color: #fff;
+}
+  
+.footer-under {
+  padding-top: 5px;
+  border-top: 1px solid #fff;
+  font-size: 10px;
+  text-align: center;
+  color: #fff;
+  background-color: #121212;
 }
 
-/*サイト全体の基準となるCSSを記述*/
-html {
-  font-size: 16px;
+.footer-under a{
+  line-height: 3;
+  text-decoration: none;
+  color: #fff;
 }
 
-body {
-  /*フォントの指定*/
-  font-family: 'メイリオ', 'Meiryo', 'ヒラギノ角ゴ Pro', 'Hiragino Kaku Gothic Pro', 'Noto Sans Japanese', Osaka, 'ＭＳ Ｐゴシック', 'MS PGothic', sans-serif;
-  /*行間の指定*/
-  line-height: 1.4;
-  margin: 0;
-  padding: 0;
-  /*サイトのデフォルトとなる文字の色を指定*/
-  color: #333;
+
+ 
+
+
+
+ #nav-open span, #nav-open span:before, #nav-open span:after {
+  position: absolute;
+  height: 7px;
+  width: 30px;
+  background: #666;
+  content: "";
+  cursor: pointer;
 }
 
-/*見出しを全て太字で表示 + 文字色を黒に*/
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold;
-  color: #000;
+#nav-open span {
+  top: 38px;
+  right: 30px;
 }
 
-img {
-  max-width: 100%;
+#nav-open span:before {
+  bottom: -12px;
+}
+
+#nav-open span:after {
+  bottom: -24px;
+}
+
+
+
+#nav-contents {
+  display: none;
+}
+
+.nav-invisible {
+display: none;
+}
+
+#nav-contents {
+  position: absolute;
+  top: 100px;
+  z-index: 100;
+  width: 100%;
   height: auto;
+  background: black;
+  transition: .3s;
+  opacity: 0;
+}
+
+#nav-input:checked ~ #nav-contents {
+  display: block;
+  opacity: .8;
+}
+
+.sp-menu {
+  display: none;
+}
+
+.sp-menu-list {
+  border-bottom: 1px solid white;
+  text-align: left;
+  line-height: 2.0;
+  padding: 10px;
+}
+
+.sp-menu-list:hover {
+  background-color: #D4BC66;
+}
+
+.sp-menu-list a {
+  color: white;
+  text-decoration: none;
+}
+
+.sp-menu-top {
+  font-size: 15px;
+}
+
+.sp-menu-bottom {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 780px){
+   body {
+       font-size: 12px;
+       line-height: 1.5;
+   }
+  
+   .wrap {
+    overflow: hidden;
+}
+.h-title .h-logo {
+  width: 60%;
+}
+
+
+#nav-open span:before {
+  bottom: -12px;
+  left: 0px;
+}
+
+#nav-open span:after {
+  bottom: -24px;
+  left: 0px;
+}
+.m-header {
+  display: none;
+}
+
+.h-nav {
+  display: none;
+}
+
+.m-h2, .m-h3 {
+   font-size: 16px;
+   padding: 7px 6px 7px 8px;
+}
+
+.m-h2::first-letter {
+   padding-left: 8px;
+}
+
+.m-info-date {
+  font-size: 8px;
+}
+.m-info-content {
+   font-size: 8px;
+   line-height: 1.5;
+}
+
+.m-info-new {
+  font-size: 8px;
+  padding: 1px 2px;
+}
+
+.m-log a {
+  font-size: 12px;
+}
+
+.sp-menu {
+  display: block;
+}
+
+.main {
+   float: none;
+   width: auto;
+}
+
+.contents {
+   padding: 2%;
+}
+
+.side {
+   float: none;
+   width: auto;
+}
+
+.h1 {
+  margin: 0;
+  width: 100%;
+}
+
+.section1 {
+ font-size: 18px;
+  text-align: center;
+  margin: 0 20px;
+}
+.h3 {
+  margin: 0 10px;
+}
+
+.section2 {
+  width: 100%;
+
+}
+
+.left1 {
+  text-align: center;
+  float: none;
+  width: 100%;
+  height: auto;
+  
+}
+
+.h4 {
+ width: 100%;
+ font-size: 22px;
+ margin: 20px 0;
+}
+
+.t-p {
+  margin-top: 10px;
+  font-size: 13px;
+}
+
+.p-p {
+  margin: 2px 20px 20px 20px;
+}
+
+div {
+  text-align: center;
+}
+.right1 {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  float:none;
+}
+
+.left2 {
+  height: auto;
+  width: 50%;
+  margin: 0 auto;
+  float:none;
+  
+}
+
+.right2 {
+  text-align: center;
+  float: none;
+  width: 100%;
+  height: auto;
+}
+.m-date {
+  font-size: 16px;
+  margin: 0px;
+  float: none;
+}
+
+.m-contents {
+  font-size: 14px;
+}
+.dete {
+  font-size: 16px;
+  float: none;
+}
+
+.contents {
+  font-size: 14px;
+}
+
+.c-p {
+  margin: 12px 40px;
+}
+
+.h6 {
+  font-size: 22px;
+  margin: 10px 50px;
+}
+
+.memo {
+  margin: 0 auto;
+  text-align: center;
+  height: auto;
+}
+
+.f-left {
+  margin-left: 30px;
+  text-align: left;
+  float: none;
+  font-size:15px;
+}
+
+.f-p {
+  font-size: 12px;
+}
+
 }
